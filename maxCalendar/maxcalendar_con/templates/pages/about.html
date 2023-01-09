@@ -1,0 +1,97 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+    body {
+        background: #ffc107;
+    }
+</style>
+
+<div class="row bg-dark text-light">
+    <div class="col-sm-6 ms- ps-0">
+        <img src="{% static 'img/1.jpg' %}" alt="" class="w-100">
+    </div>
+    <div class="col-sm-6 d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <h2 class="display-2">MaxYazılım</h2>
+            <p>Sizin için planlamayı her zamankinden daha kolay hale getiriyoruz
+            </p>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-2 text-dark">
+    <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+            <h2>Vizyonumuz</h2>
+            <p>MaxYazılım ekibi olarak vizyonumuz müşteri odaklı bir yaklaşımla Türkiye've dünyada lider konuma
+                ulaşmaktır.
+            </p>
+
+            <hr>
+            <h2>Misyonumuz</h2>
+            <p>Yenilikçi çözümlerimiz ve güvenilirliğimizle tüm paydaşlarımız için kalıcı ve yüksek değer yaratmak.</p>
+            <ul>
+                <li>Ücretsiz Planlama</li>
+                <li>Hızlı Planlama</li>
+                <li>7/24 Destek</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-sm-8 offset-sm-2 ms-2">
+                <h2>Adresimiz</h2>
+                <address>
+                    <p>Esenkent, Dudullu Osb Mah, Nato Yolu Cd 265/ 1, 34775 Ümraniye/İstanbul</p>
+                </address>
+                <hr>
+                <h2 class="mt-5">Bize Ulaşın</h2>
+                <form class="row g-3">
+                    <div class="col-12">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control bg-dark text-light" id="inputEmail4">
+                    </div>
+
+                    <div class="col-12">
+                        <label for="mesaj" class="form-label">Mesaj</label>
+                        <textarea class="form-control bg-dark text-light" id="mesaj"></textarea>
+
+                    </div>
+
+                    <div class="col-12">
+                        <label for="inputCity" class="form-label">Sehir</label>
+                        <input type="text" class="form-control bg-dark text-light" id="inputCity">
+                    </div>
+                    <div class="col-12 mt-2">
+                        <label for="inputState" class="form-label">Bize Nasıl Ulaştın:</label>
+                        <select id="inputState" class="form-select bg-dark text-light">
+                            <option selected>Seçiminiz...</option>
+                            <option>Sosyal Medya</option>
+                            <option>Google</option>
+                            <option>Reklam</option>
+                            <option>Referans</option>
+                        </select>
+                    </div>
+
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-dark">Gönder</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+{% endblock %}
